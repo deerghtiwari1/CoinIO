@@ -25,7 +25,7 @@
 
 <h3>Download or clone the repository</h3>
 <p>You can download the zip file of the repository or use the following command in your terminal to clone the repository:</p>
-<pre><code class="language-bash">git clone https://github.com/d17012002/luganodes-task-1</code></pre>
+<pre><code class="language-bash">git clone [https://github.com/d17012002/luganodes-task-1](https://github.com/deerghtiwari1/CoinIO.git)</code></pre>
 <h3>Navigate to the project's root directory</h3>
 <p>Once you have downloaded or cloned the repository, navigate to the project's root directory. The project consists of 2 folders: client and server.</p>
 <h3>Install dependencies</h3>
@@ -44,9 +44,9 @@
 <h4>Note: Make sure to follow the exact steps mentioned above to avoid any errors or issues.</h4>
 <br>
 <br>
-Website Link: https://tracert.vercel.app/
+Website Link: https://coinio.vercel.app/
 <br>
-Server Link: https://luganodes-backend-nok6.onrender.com
+Server Link: https://coinio-backend.onrender.com/
 
 <h1>📜 License</h1>
 This project is licensed under the MIT License - see the LICENSE.md file for details.
