@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Daily Notification Email</title>
+    <style>
+        /* Add your CSS styles here (optional) */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .logo {
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        .content {
+            padding: 20px;
+        }
+        .greeting {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .currency-details {
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .currency-details th,
+        .currency-details td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .currency-details th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="https://th.bing.com/th/id/OIP.UQPvaTEM3E0C1ivswC40FwHaE7?pid=ImgDet&w=1256&h=835&rs=1" alt="Company Logo">
+    </div>
+    <div class="content">
+        <p class="greeting">Hello, <%= userName %>!</p>
+        <p>Here are your subscribed currency details:</p>
+        <center>
+            <table class="currency-details">
+                <tr>
+                    <th>Currency Name</th>
+                    <th>Currency Price</th>
+                    <th>Lowest Value in 24h</th>
+                    <th>Highest Value in 24h</th>
+                    <th>Price Change in 24h</th>
+                    <th>Last Updated</th>
+            </tr>
+            <% currencyDetails.forEach((currency) => { %>
+                <tr>
+                    <td><%= currency.name %></td>
+                    <td><%= currency.current_price %></td>
+                    <td><%= currency.low_24h %></td>
+                    <td><%= currency.high_24h %></td>
+                    <td><%= currency.price_change_24h %></td>
+                    <td><%= currency.last_updated %></td>
+                </tr>
+                <% }); %>
+            </table>
+        </center>
+        <br>
+        <p> Thankyou for trusting us! We will keep updating you in every 24 hours. For testing it will come in every 2 min. </p>
+    </div>
+</body>
+
+</html>
