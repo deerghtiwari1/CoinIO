@@ -4,7 +4,7 @@ const axios = require('axios');
 async function sendPostRequest() {
     console.log("hitting post req");
   try {
-    const response = await axios.post('http://localhost:5000/currency/checklimit', {
+    const response = await axios.post('https://coinio-backend.onrender.com/currency/checklimit', {
     });
 
     console.log('POST request successful:', response.data);
