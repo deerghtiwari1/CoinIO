@@ -205,7 +205,7 @@ export default function Signin({ userIdCookie }) {
                                 <p className="text-sm text-gray-700 mt-6">
                                     *Do not have an account?{" "}
                                     <a
-                                        href="https://tracert.vercel.app/users/signup"
+                                        href="https://coinio.vercel.app/users/signup"
                                         className="text-[color:var(--darker-secondary-color)]"
                                     >
                                         Signup.
